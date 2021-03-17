@@ -162,6 +162,7 @@ return [
     */
     'encoding' => [
         'application/vnd.api+json',
+        'application/json', 'application/vnd.api+json; charset=utf-8',
     ],
 
     /*
@@ -184,6 +185,7 @@ return [
     */
     'decoding' => [
         'application/vnd.api+json',
+        'application/json', 'application/vnd.api+json; charset=utf-8',
     ],
 
     /*
