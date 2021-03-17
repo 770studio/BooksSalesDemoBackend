@@ -25,13 +25,16 @@ class RentFactory extends Factory
     {
 
 
-
+        $created = $this->faker->dateTimeBetween('-3 months', 'now');
         return [
             'count' => rand(1,3) ,
             'deadline' => $this->faker->dateTimeThisMonth,
+            'created_at' => $created,
+            'updated_at' => $created,
             'deposit' => $this->faker->randomFloat(2, 100, 99999999 ),
             'user_id' => User::factory(),
             'book_id' => Book::factory(),
+
         ];
     }
 }
