@@ -2,10 +2,13 @@
 
 namespace App\JsonApi\Rents;
 
+
+
 use Neomerx\JsonApi\Schema\SchemaProvider;
 
 class Schema extends SchemaProvider
 {
+
 
     /**
      * @var string

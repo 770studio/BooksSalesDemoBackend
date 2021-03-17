@@ -30,5 +30,5 @@ JsonApi::register('default')->routes(function ($api) {
     $api->resource('rents')->relationships(function ($relations) {
         $relations->hasOne('users');
         $relations->hasOne('books');
-    });
+    })->controller()->async();
 });
